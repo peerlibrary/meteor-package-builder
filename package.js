@@ -6,10 +6,11 @@ Package.describe({
 });
 
 Npm.depends({
-  'meteor-package-builder': 'https://github.com/peerlibrary/node-meteor-package-builder/tarball/6f566c846e9451d09d072520f31eb74bcc37fe99'
+  'meteor-package-builder': 'https://github.com/peerlibrary/node-meteor-package-builder/tarball/bdbb827e7ddc61f4656493a9a60b59d40b33335c'
 });
 
 Package.onUse(function (api) {
+  api.use(['package-version-parser'], 'server');
   api.versionsFrom('METEOR@1.0.3.2');
 
   api.export('PackageBuilder');
@@ -20,7 +21,7 @@ Package.onUse(function (api) {
 });
 
 Package.onTest(function (api) {
-  api.use(['peerlibrary:package-builder', 'tinytest', 'test-helpers', 'coffeescript'], 'server');
+  api.use(['peerlibrary:package-builder', 'tinytest', 'test-helpers', 'coffeescript', 'random'], 'server');
 
   api.add_files([
     'tests.coffee'

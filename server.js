@@ -1,3 +1,3 @@
 PackageBuilder = {
-  buildPackage: Npm.require('meteor-package-builder')(Npm)
+  buildPackage: Npm.require('meteor-package-builder')(Npm, PackageVersion)
 };
