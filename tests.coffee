@@ -57,7 +57,7 @@ Tinytest.add 'package-builder - building', (test) ->
   pkg = PackageBuilder.buildPackage
     packageDir: packageDirectory
     release: Meteor.release
-    # TODO: Verify if setting offline really works (does somehing), and if one can change it between calls
+    # TODO: Verify if setting offline really works (does something), and if one can change it between calls
     offline: false
 
   end = new Date().valueOf()
