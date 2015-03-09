@@ -15,7 +15,7 @@ Package.onUse(function (api) {
 
   api.export('PackageBuilder');
 
-  api.add_files([
+  api.addFiles([
     'server.js'
   ], 'server');
 });
@@ -23,7 +23,7 @@ Package.onUse(function (api) {
 Package.onTest(function (api) {
   api.use(['peerlibrary:package-builder', 'tinytest', 'test-helpers', 'coffeescript', 'random'], 'server');
 
-  api.add_files([
+  api.addFiles([
     'tests.coffee'
   ], 'server');
 });

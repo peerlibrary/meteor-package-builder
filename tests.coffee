@@ -27,11 +27,11 @@ createPackage = ->
       api.use(['coffeescript'], ['client', 'server']);
       api.versionsFrom('METEOR@1.0.3.2');
 
-      api.add_files([
+      api.addFiles([
         'server.coffee'
       ], 'server');
 
-      api.add_files([
+      api.addFiles([
         'client.coffee'
       ], 'client');
     });
