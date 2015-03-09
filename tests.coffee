@@ -62,7 +62,7 @@ Tinytest.add 'package-builder - building', (test) ->
 
   end = new Date().valueOf()
 
-  console.log "Building package time (offline #{ offline }): #{ (end - start) / 1000 } s"
+  console.log "Building package time: #{ (end - start) / 1000 } s"
 
   test.equal pkg.sourceRoot, packageDirectory
   test.equal pkg.packageName, 'acme:foobar'
